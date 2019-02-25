@@ -28,6 +28,11 @@
 // and statically link with the zlib library. All the necessary
 // header files are included by opennurbs.h.
 
+#if 1
+ON_BEGIN_EXTERNC
+#include <zlib.h>
+ON_END_EXTERNC
+#else
 
 #if !defined(Z_PREFIX)
 /* decorates zlib functions with a "z_" prefix to prevent symbol collision. */
@@ -47,5 +52,6 @@ ON_BEGIN_EXTERNC
 voidpf zcalloc(voidpf, unsigned, unsigned);
 void  zcfree(voidpf, voidpf);
 ON_END_EXTERNC
+#endif
 
 #endif

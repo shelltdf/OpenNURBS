@@ -51,7 +51,7 @@
 #endif
 
 
-#if defined(WIN32)
+#if 0//defined(WIN32)
 
 #if !defined(_WIN32)
 #error Microsoft defines _WIN32 for all Windows builds
@@ -127,7 +127,7 @@
 #endif
 
 
-#if defined(WIN32)
+#if 0//defined(WIN32)
 
 #if !defined(_WIN32)
 #error Microsoft defines _WIN32 for all Windows builds
